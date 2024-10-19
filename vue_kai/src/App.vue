@@ -1,4 +1,5 @@
 <script setup>
+import ButtonCount from './components/ButtonCount.vue';
 import FirstComponment from './components/FirstComponment.vue';
 import SecondComponment from './components/SecondComponment.vue';
 import { ref } from 'vue';
@@ -13,6 +14,7 @@ const message = ref("kai")
   <!-- <first-componment></first-componment> -->
 
   <SecondComponment></SecondComponment>
+  <ButtonCount></ButtonCount>
 </template>
 
 <style scoped>

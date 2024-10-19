@@ -1,18 +1,30 @@
 <script setup>
-const count = 100
-const week = ["日", "一", "二", "三", "四", "五", "六"]
+import { nextTick, ref } from 'vue';
 
+const count = ref(100)
+const add = async ()=>{
+    // console.log(count.value)   // 響應式的變數
+    count.value++
+    await nextTick()
+    const btn = document.querySelector('button')
+    console.log(btn.textContent)
+}
+const week = ["日", "一", "二", "三", "四", "五", "六"]
 </script>
+
+
+
+
 
 <template>
 <div>
-    <div>星期{{      }}</div>
+    <div>星期{{   count   }}</div>
 
-    <button>{{ count }}</button>
+    <button @click="add">{{ count }}</button>
     <!-- {{ if (true) { return 'Hello' } }} -->
-    {{ new Date().toLocaleDateString() }}
+    <!-- {{ new Date().toLocaleDateString() }}
     {{ let name = 'Jack’ }}
-    {{ i+=1 }}
+    {{ i+=1 }} -->
 
 
 
