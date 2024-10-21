@@ -2,6 +2,7 @@
 import ButtonCount from './components/ButtonCount.vue';
 import FirstComponment from './components/FirstComponment.vue';
 import SecondComponment from './components/SecondComponment.vue';
+import ThirdComponment from './components/ThirdComponment.vue';
 import { ref } from 'vue';
 const message = ref("kai")
 
@@ -14,6 +15,7 @@ const message = ref("kai")
   <!-- <first-componment></first-componment> -->
 
   <SecondComponment></SecondComponment>
+  <ThirdComponment></ThirdComponment>
   <ButtonCount></ButtonCount>
 </template>
 

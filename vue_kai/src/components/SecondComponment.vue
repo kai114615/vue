@@ -7,6 +7,7 @@ const message = ref("響應式API")
     <h2>第二個組件</h2>
     <input type="text" value="" v-model="message">
     <p>{{ message }}</p>
+    <hr>
 </template>
 
 <style scoped>

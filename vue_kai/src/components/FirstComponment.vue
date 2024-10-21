@@ -24,6 +24,7 @@ onMounted(() => {
 
 <template>
   <h2 id="theH">first com</h2>
+  <hr>
   <!-- <hr>
   <div>星期{{   week[6]  }}</div>
   <p>出版了書籍：{{ true? "是" : "否"}}</p> -->

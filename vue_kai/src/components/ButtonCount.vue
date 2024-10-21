@@ -21,6 +21,7 @@ const week = ["日", "一", "二", "三", "四", "五", "六"]
     <div>星期{{   count   }}</div>
 
     <button @click="add">{{ count }}</button>
+    <hr>
     <!-- {{ if (true) { return 'Hello' } }} -->
     <!-- {{ new Date().toLocaleDateString() }}
     {{ let name = 'Jack’ }}
